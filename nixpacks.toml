@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python312"]
+
+[phases.install]
+cmds = ["pip install python-telegram-bot[job-scheduling]==21.3 anthropic>=0.39.0"]
+
+[start]
+cmd = "python bot.py"
